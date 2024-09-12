@@ -5,6 +5,7 @@ const itemsSlice = createSlice({
   initialState: {
     items: [],
     filter: "",
+    currentPage: 1,
   },
   reducers: {
     setItems: (state, action) => {
@@ -13,8 +14,11 @@ const itemsSlice = createSlice({
     setFilter: (state, action) => {
       state.filter = action.payload;
     },
+    setPage: (state, action) => {
+      state.currentPage = action.payload;
+    },
   },
 });
 
-export const { setItems, setFilter } = itemsSlice.actions;
+export const { setItems, setFilter, setPage } = itemsSlice.actions;
 export default itemsSlice.reducer;

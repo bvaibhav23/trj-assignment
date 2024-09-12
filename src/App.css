@@ -54,3 +54,31 @@ h1 {
 .item:hover {
   background-color: #e2e2e2;
 }
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pagination button:disabled {
+  background-color: #e2e2e2;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  align-self: center;
+  font-size: 16px;
+  margin: 0 10px;
+}
